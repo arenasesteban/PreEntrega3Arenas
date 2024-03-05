@@ -1,0 +1,113 @@
+#banner {
+    width: 100%;
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner-image {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        } 
+
+        .banner-content {
+            width: 100%;
+            font-size: 1.6rem;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            background-color: black;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+#biography {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding: 30px 0;
+
+    .biography-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        color: white;
+        gap: 40px;
+
+        .biography-description {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+
+            p {
+                width: 500px;
+                font-size: 1.4rem;
+            }
+        }
+
+        .biography-image {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 400px;
+                border-radius: 5px;
+                box-shadow: 0 0 16px rgba(0, 0, 0, .6);
+            }
+        }
+    }
+}
+
+#news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .carousel {
+        width: 950px;
+        margin: 30px 0;
+
+        .carousel-inner {
+            border-radius: 8px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+
+            .carousel-item {
+                img {
+                    height: 520px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .carousel-caption {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, .6) 40%, rgba(0, 0, 0, .4) 80%, rgba(0, 0, 0, 0) 100%);
+                border-radius: 5px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                padding: 20px 0 40px 0;
+                
+                h2 {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

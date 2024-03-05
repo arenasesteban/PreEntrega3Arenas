@@ -1,0 +1,91 @@
+#discrography {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(../images/banner_2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .album-container {
+        width: 920px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: 0 0 16px rgba(0, 0, 0, .6);
+        border-radius: 5px;
+
+        .album-1, .album-2 {
+            width: 50%;
+
+            .subtitle-border {
+                border-color: white;
+            }
+
+            .album-details {
+                font-size: 1rem;
+                display: flex;
+                padding: 5px;
+
+                p {
+                    width: 50%;
+                    margin: 5px;
+
+                    &:first-child {
+                        font-weight: 600;
+                        border-right: 1px solid grey;
+                    }
+                }
+            }
+        }
+
+        .album-link {
+            width: 50%;
+        }
+    }
+}
+
+#top {
+    width: 100%;
+
+    .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    table {
+        background-color: white;
+        text-align: center;
+        border-collapse: collapse;
+        box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+
+        td {
+            font-size: 1rem;
+            color: #000;
+            border: 2px solid #eee;
+            padding: 15px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+        th {
+            font-size: 1rem;
+            color: #000;
+            border: 2px solid #eee;
+            padding: 15px;
+            background-color: #1c1c1c;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
