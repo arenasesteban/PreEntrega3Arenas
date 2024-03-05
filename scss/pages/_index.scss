@@ -1,6 +1,4 @@
 #banner {
-    width: 100%;
-
     .banner-container {
         display: flex;
         flex-direction: column;
@@ -15,7 +13,7 @@
 
         .banner-content {
             width: 100%;
-            font-size: 1.6rem;
+            font-size: 1.58rem;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -29,7 +27,6 @@
 }
 
 #biography {
-    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #1c1c1c;
@@ -49,13 +46,13 @@
             h2 {
                 font-size: 1.8rem;
                 font-weight: 700;
-                margin-bottom: 20px;
                 text-transform: uppercase;
+                margin-bottom: 20px;
             }
 
             p {
                 width: 500px;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -77,7 +74,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
     .carousel {
         width: 950px;
         margin: 30px 0;

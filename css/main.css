@@ -12,8 +12,12 @@ body h1, body h2, body h3, body p, body ul {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .title-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,11 +48,11 @@ body h1, body h2, body h3, body p, body ul {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding: 30px 0;
+  padding: 20px 0;
   background-color: #2f2f2f;
 }
 .title-2-container h2 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -59,7 +63,7 @@ body h1, body h2, body h3, body p, body ul {
   padding: 10px;
 }
 .subtitle h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .subtitle .subtitle-border {
@@ -107,13 +111,8 @@ header .navbar .navbar-nav li:hover {
   transition: 0.5s;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
 footer {
-  height: 130px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +127,7 @@ footer .description-container {
 }
 footer .description-container .description-home {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 footer .description-container .description-socialmedia img {
   width: 20px;
@@ -142,9 +141,6 @@ footer .copyright {
   padding: 10px 0;
 }
 
-#banner {
-  width: 100%;
-}
 #banner .banner-container {
   display: flex;
   flex-direction: column;
@@ -156,7 +152,7 @@ footer .copyright {
 }
 #banner .banner-container .banner-content {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.58rem;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -167,7 +163,6 @@ footer .copyright {
 }
 
 #biography {
-  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #1c1c1c;
@@ -187,12 +182,12 @@ footer .copyright {
 #biography .biography-container .biography-description h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 #biography .biography-container .biography-description p {
   width: 500px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 #biography .biography-container .biography-image {
   display: flex;
@@ -238,7 +233,6 @@ footer .copyright {
 }
 
 #discrography {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +248,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -262,7 +256,10 @@ footer .copyright {
 #discrography .album-container .album-1, #discrography .album-container .album-2 {
   width: 50%;
 }
-#discrography .album-container .album-1 .subtitle-border, #discrography .album-container .album-2 .subtitle-border {
+#discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
+  margin-bottom: 20px;
+}
+#discrography .album-container .album-1 .subtitle .subtitle-border, #discrography .album-container .album-2 .subtitle .subtitle-border {
   border-color: white;
 }
 #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
@@ -281,33 +278,33 @@ footer .copyright {
 #discrography .album-container .album-link {
   width: 50%;
 }
-
-#top {
-  width: 100%;
+#discrography .album-container:first-of-type {
+  margin-bottom: 0;
 }
+
 #top .table-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0;
 }
-#top table {
+#top .table-container table {
   background-color: white;
   text-align: center;
   border-collapse: collapse;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
-#top table td {
+#top .table-container table td {
   font-size: 1rem;
   color: #000;
   border: 2px solid #eee;
   padding: 15px;
 }
-#top table td img {
+#top .table-container table td img {
   width: 25px;
   height: 25px;
 }
-#top table th {
+#top .table-container table th {
   font-size: 1rem;
   color: #000;
   border: 2px solid #eee;
@@ -318,7 +315,6 @@ footer .copyright {
 }
 
 #galery {
-  width: 100%;
   background-color: #1c1c1c;
 }
 #galery .gallery-container {
@@ -413,15 +409,15 @@ footer .copyright {
   box-sizing: border-box;
 }
 #aboutUs .about-us-description p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 15px 0;
 }
 
 #form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0;
 }
 #form .contact-container {
   width: 500px;
@@ -430,7 +426,6 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   padding: 60px;
-  margin: 25px 0;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
@@ -438,13 +433,15 @@ footer .copyright {
 #form .contact-container .contact-group {
   width: 90%;
 }
+#form .contact-container .contact-group .subtitle {
+  margin-bottom: 20px;
+}
 #form .contact-container .contact-group .form-group {
   width: 100%;
   padding: 5px 0;
 }
 #form .contact-container .contact-group .form-group label {
-  display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
