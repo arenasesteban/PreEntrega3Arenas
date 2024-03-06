@@ -5,9 +5,18 @@
         align-items: center;
 
         .banner-image {
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
+                @include mobile {
+                    width: 130%;
+                }
             }
         } 
 
@@ -18,6 +27,10 @@
             text-align: center;
             padding: 20px 0;
             background-color: black;
+            @include mobile {
+                font-size: .9rem;
+                padding: 10px 0;
+            }
 
             span {
                 font-weight: 700;
@@ -31,6 +44,9 @@
     justify-content: center;
     background-color: #1c1c1c;
     padding: 30px 0;
+    @include mobile {
+        padding: 20px 0;
+    }
 
     .biography-container {
         display: flex;
@@ -38,6 +54,10 @@
         align-items: center;
         color: white;
         gap: 40px;
+        @include mobile {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
 
         .biography-description {
             display: flex;
@@ -48,11 +68,21 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                @include mobile {
+                    font-size: 1rem;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
             }
 
             p {
                 width: 500px;
                 font-size: 1.2rem;
+                @include mobile {
+                    width: unset;
+                    font-size: .7rem;
+                    padding: 0 20px;
+                }
             }
         }
 
@@ -64,6 +94,9 @@
                 width: 400px;
                 border-radius: 5px;
                 box-shadow: 0 0 16px rgba(0, 0, 0, .6);
+                @include mobile {
+                    width: 180px;
+                }
             }
         }
     }
@@ -78,6 +111,10 @@
     .carousel {
         width: 950px;
         margin: 30px 0;
+        @include mobile {
+            width: 90%;
+            margin: 20px 0;
+        }
 
         .carousel-inner {
             border-radius: 8px;
@@ -88,6 +125,9 @@
                     height: 520px;
                     object-fit: cover;
                     object-position: center;
+                    @include mobile {
+                        height: 220px;
+                    }
                 }
             }
 
@@ -98,11 +138,18 @@
                 left: 0;
                 bottom: 0;
                 padding: 20px 0 40px 0;
-                
+                @include mobile {
+                    display: block !important;
+                    padding: 10px 0 35px 0;
+                }
+
                 h2 {
                     font-size: 1.8rem;
                     font-weight: 700;
                     text-transform: uppercase;
+                    @include mobile {
+                        font-size: .9rem;
+                    }
                 }
             }
         }
