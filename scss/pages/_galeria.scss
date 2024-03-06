@@ -10,6 +10,12 @@
         max-width: 1024px;
         gap: 15px;
         padding: 30px;
+        @include mobile {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-auto-rows: 220px;
+            gap: 10px;
+            padding: 20px;
+        }
 
         .item {
             grid-column: span 2;
@@ -31,6 +37,20 @@
         .item_wide {
             grid-column: span 3;
             grid-row: span 2;
+        }
+
+        .item, .item_horizontal, .item_wide {
+            @include mobile {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+        }
+
+        .item_vertical, .item_tall {
+            @include mobile {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
         }
 
         div {
@@ -56,9 +76,17 @@
         justify-content: center;
         align-items: flex-start;
         margin: 30px 0;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
 
         .card-container {
-            margin: 0 15px;
+            margin: 0 20px;
+            // @include mobile {
+            //     margin: 0;
+            // }
 
             iframe {
                 width: 480px;
@@ -66,16 +94,38 @@
                 border-radius: 5px;
                 box-shadow: 0 0 16px rgba(0, 0, 0, .4);
                 margin-bottom: 10px;
+                @include mobile {
+                    width: 300px;
+                    height: 200px;
+                }
             }
 
             .card-video-content {
                 width: 480px;
                 border-top: 1px solid #5b5b5b;
                 padding-top: 10px;
+                @include mobile {
+                    width: 300px;
+                }
 
                 h5 {
                     font-size: 1.2rem;
                     font-weight: 600;
+                    @include mobile {
+                        font-size: .9rem;
+                    }
+                }
+
+                p {
+                    @include mobile {
+                        font-size: .7rem;
+                    }
+                }
+            }
+
+            &:first-of-type {
+                @include mobile {
+                    margin-bottom: 25px;
                 }
             }
         }
