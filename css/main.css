@@ -130,9 +130,9 @@ footer .description-container .description-home {
   font-size: 1.5rem;
 }
 footer .description-container .description-socialmedia img {
-  width: 20px;
-  height: 20px;
-  margin: 0 8px;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
 }
 footer .copyright {
   width: 100%;
@@ -301,8 +301,8 @@ footer .copyright {
   padding: 15px;
 }
 #top .table-container table td img {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
 }
 #top .table-container table th {
   font-size: 1rem;
@@ -428,7 +428,7 @@ footer .copyright {
   padding: 60px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
 #form .contact-container .contact-group {
   width: 90%;
