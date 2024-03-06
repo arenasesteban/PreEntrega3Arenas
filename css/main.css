@@ -25,10 +25,20 @@ a {
   padding: 30px 0;
   background-color: #000;
 }
+@media (max-width: 767px) {
+  .title-container {
+    padding: 20px 0;
+  }
+}
 .title-container h1 {
   font-size: 4rem;
   font-weight: 700;
   color: white;
+}
+@media (max-width: 767px) {
+  .title-container h1 {
+    font-size: 2rem;
+  }
 }
 .title-container h2 {
   font-size: 1.5rem;
@@ -37,10 +47,20 @@ a {
   text-transform: uppercase;
   color: white;
 }
+@media (max-width: 767px) {
+  .title-container h2 {
+    font-size: 0.8rem;
+  }
+}
 .title-container p {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
+}
+@media (max-width: 767px) {
+  .title-container p {
+    font-size: 0.8rem;
+  }
 }
 
 .title-2-container {
@@ -51,9 +71,19 @@ a {
   padding: 20px 0;
   background-color: #2f2f2f;
 }
+@media (max-width: 767px) {
+  .title-2-container {
+    padding: 15px 0;
+  }
+}
 .title-2-container h2 {
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .title-2-container h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .subtitle {
@@ -66,10 +96,20 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .subtitle h2 {
+    font-size: 1.1rem;
+  }
+}
 .subtitle .subtitle-border {
   width: 60px;
   border-top: 2px solid black;
-  margin-top: 5px;
+  margin-top: 2px;
+}
+@media (max-width: 767px) {
+  .subtitle .subtitle-border {
+    width: 40px;
+  }
 }
 
 header {
@@ -79,6 +119,11 @@ header .navbar {
   padding: 5px;
   background-color: white !important;
 }
+@media (max-width: 767px) {
+  header .navbar {
+    padding: 10px 0;
+  }
+}
 header .navbar .navbar-brand {
   font-size: 2rem;
   font-weight: 700;
@@ -87,9 +132,20 @@ header .navbar .navbar-brand {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  header .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
 header .navbar .navbar-brand img {
   height: 60px;
   margin-right: 10px;
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-brand img {
+    height: 50px;
+    margin-right: 2px;
+  }
 }
 header .navbar .navbar-nav a {
   height: 50px;
@@ -100,6 +156,12 @@ header .navbar .navbar-nav a {
   align-items: center;
   text-transform: uppercase;
   padding: 0 10px;
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-nav a {
+    height: 40px;
+    font-size: 0.8rem;
+  }
 }
 header .navbar .navbar-nav li {
   font-weight: 400;
@@ -119,26 +181,48 @@ footer {
   align-items: center;
   background-color: #cfcfcf;
 }
+@media (max-width: 767px) {
+  footer {
+    height: 100px;
+  }
+}
 footer .description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px;
+  padding: 8px 0;
 }
 footer .description-container .description-home {
   font-weight: 700;
   font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  footer .description-container .description-home {
+    font-size: 1.2rem;
+  }
 }
 footer .description-container .description-socialmedia img {
   width: 25px;
   height: 25px;
   margin: 0 5px;
 }
+@media (max-width: 767px) {
+  footer .description-container .description-socialmedia img {
+    width: 20px;
+    height: 20px;
+  }
+}
 footer .copyright {
   width: 100%;
   text-align: center;
   background-color: #c0c0c0;
   padding: 10px 0;
+}
+@media (max-width: 767px) {
+  footer .copyright {
+    font-size: 0.7rem;
+    padding: 6px 0;
+  }
 }
 
 #banner .banner-container {

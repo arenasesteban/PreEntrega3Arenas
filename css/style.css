@@ -1,19 +1,5 @@
 /* Vista movil */
 @media (320px <= width <= 480px) {
-    /* Header */    
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-
-    .navbar-brand img {
-        height: 50px;
-        margin-right: 2px;
-    }
-
     /* Footer */
     footer {
         height: 130px;
@@ -37,39 +23,6 @@
 
     .copyright {
         font-size: 0.8rem;
-    }
-
-    /* Titulos */
-    .title-container {
-        padding: 20px 15px;
-    }
-
-    .title-container h1 {
-        font-size: 2rem;
-    }
-
-    .title-container h2 {
-        font-size: 1rem;
-    }
-
-    .title-container p {
-        font-size: 0.9rem;
-    }
-
-    .title-2-container {
-        padding: 20px 0;
-    }
-
-    .title-2-container h2 {
-        font-size: 1.4rem;
-    }
-
-    .subtitle h2 {
-        font-size: 1.2rem;
-    }
-
-    .subtitle-border {
-        width: 40px;
     }
 
     /* Home */

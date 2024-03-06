@@ -5,11 +5,17 @@
     align-items: center;
     padding: 30px 0;
     background-color: #000;
+    @include mobile {
+        padding: 20px 0;
+    }
 
     h1 {
         font-size: 4rem;
         font-weight: 700;
         color: white;
+        @include mobile {
+            font-size: 2rem;
+        }
     }
 
     h2 {
@@ -18,12 +24,18 @@
         text-align: right;
         text-transform: uppercase;
         color: white;
+        @include mobile {
+            font-size: .8rem;
+        }
     }
 
     p {
         font-size: 1.5rem;
         font-weight: 600;
         color: white;
+        @include mobile {
+            font-size: .8rem;
+        }
     }
 }
 
@@ -34,10 +46,16 @@
     text-transform: uppercase;
     padding: 20px 0;
     background-color: #2f2f2f;
+    @include mobile {
+        padding: 15px 0;
+    }
 
     h2 {
         font-size: 2.5rem;
         font-weight: 700;
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -50,11 +68,17 @@
     h2 {
         font-size: 1.6rem;
         font-weight: 600;
+        @include mobile {
+            font-size: 1.1rem;
+        }
     }
 
     .subtitle-border {
         width: 60px;
         border-top: 2px solid black;
-        margin-top: 5px;
+        margin-top: 2px;
+        @include mobile {
+            width: 40px;
+        }
     }
 }
