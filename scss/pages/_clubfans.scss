@@ -2,21 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
-    @include mobile {
-        padding: 20px 0;
-    }
+    @include desktop-spacing(true);
     @include tablet {
-        padding: 25px 0;
+        @include tablet-spacing(true);
+    }
+    @include mobile {
+        @include mobile-spacing(true);
     }
 
     .about-us-banner {
         margin-bottom: 20px;
-        @include mobile {
-            margin-bottom: 10px;
-        }
         @include tablet {
             margin-bottom: 15px;
+        }
+        @include mobile {
+            margin-bottom: 10px;
         }
 
         img {
@@ -25,38 +25,38 @@
             object-fit: cover;
             border-radius: 5px;
             box-shadow: 0 0 16px rgba(0, 0, 0, .4);
-            @include mobile {
-                width: 300px;
-            }
             @include tablet {
                 width: 700px;
+            }
+            @include mobile {
+                width: 300px;
             }
         }
     }
 
     .about-us-description {
-        width: 800px;
+        width: 1000px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        @include mobile {
-            width: 85%
-        }
         @include tablet {
             width: 90%;
+        }
+        @include mobile {
+            width: 85%
         }
 
         p {
             font-size: 1.2rem;
             margin: 10px 0;
+            @include tablet {
+                font-size: 1rem;
+            }
             @include mobile {
                 font-size: .7rem;
                 margin: 5px 0;
-            }
-            @include tablet {
-                font-size: 1rem;
             }
         }
     }

@@ -336,16 +336,16 @@ footer .copyright {
   padding: 20px 0;
   background-color: black;
 }
-@media (max-width: 767px) {
-  #banner .banner-container .banner-content {
-    font-size: 0.9rem;
-    padding: 10px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #banner .banner-container .banner-content {
     font-size: 1.2rem;
     padding: 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  #banner .banner-container .banner-content {
+    font-size: 0.9rem;
+    padding: 10px 0;
   }
 }
 #banner .banner-container .banner-content span {
@@ -358,14 +358,14 @@ footer .copyright {
   background-color: #1c1c1c;
   padding: 30px 0;
 }
-@media (max-width: 767px) {
-  #biography {
-    padding: 20px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #biography {
     padding: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  #biography {
+    padding: 20px 0;
   }
 }
 #biography .biography-container {
@@ -375,15 +375,15 @@ footer .copyright {
   color: white;
   gap: 40px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #biography .biography-container {
+    gap: 30px;
+  }
+}
 @media (max-width: 767px) {
   #biography .biography-container {
     flex-direction: column-reverse;
     gap: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #biography .biography-container {
-    gap: 30px;
   }
 }
 #biography .biography-container .biography-description {
@@ -401,6 +401,12 @@ footer .copyright {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #biography .biography-container .biography-description h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+}
 @media (max-width: 767px) {
   #biography .biography-container .biography-description h2 {
     font-size: 1rem;
@@ -408,26 +414,20 @@ footer .copyright {
     margin-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  #biography .biography-container .biography-description h2 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-}
 #biography .biography-container .biography-description p {
   width: 500px;
   font-size: 1.2rem;
-}
-@media (max-width: 767px) {
-  #biography .biography-container .biography-description p {
-    width: 90%;
-    font-size: 0.7rem;
-  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #biography .biography-container .biography-description p {
     width: 400px;
     font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  #biography .biography-container .biography-description p {
+    width: 90%;
+    font-size: 0.7rem;
   }
 }
 #biography .biography-container .biography-image {
@@ -439,14 +439,14 @@ footer .copyright {
   border-radius: 5px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 767px) {
-  #biography .biography-container .biography-image img {
-    width: 180px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #biography .biography-container .biography-image img {
     width: 280px;
+  }
+}
+@media (max-width: 767px) {
+  #biography .biography-container .biography-image img {
+    width: 180px;
   }
 }
 
@@ -460,16 +460,16 @@ footer .copyright {
   width: 940px;
   margin: 30px 0;
 }
-@media (max-width: 767px) {
-  #news .carousel {
-    width: 320px;
-    margin: 20px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #news .carousel {
     width: 650px;
     margin: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  #news .carousel {
+    width: 320px;
+    margin: 20px 0;
   }
 }
 #news .carousel .carousel-inner {
@@ -481,14 +481,14 @@ footer .copyright {
   object-fit: cover;
   object-position: center;
 }
-@media (max-width: 767px) {
-  #news .carousel .carousel-inner .carousel-item img {
-    height: 180px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #news .carousel .carousel-inner .carousel-item img {
     height: 360px;
+  }
+}
+@media (max-width: 767px) {
+  #news .carousel .carousel-inner .carousel-item img {
+    height: 180px;
   }
 }
 #news .carousel .carousel-inner .carousel-caption {
@@ -510,14 +510,14 @@ footer .copyright {
   font-weight: 700;
   text-transform: uppercase;
 }
-@media (max-width: 767px) {
-  #news .carousel .carousel-inner .carousel-caption h2 {
-    font-size: 0.9rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #news .carousel .carousel-inner .carousel-caption h2 {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  #news .carousel .carousel-inner .carousel-caption h2 {
+    font-size: 0.9rem;
   }
 }
 
@@ -537,10 +537,17 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 30px;
+  margin: 30px 0;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #discrography .album-container {
+    width: 740px;
+    padding: 15px;
+    margin: 25px 0;
+  }
 }
 @media (max-width: 767px) {
   #discrography .album-container {
@@ -548,13 +555,6 @@ footer .copyright {
     flex-direction: column;
     padding: 10px;
     margin: 20px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #discrography .album-container {
-    width: 740px;
-    padding: 15px;
-    margin: 25px 0;
   }
 }
 #discrography .album-container .album-1, #discrography .album-container .album-2 {
@@ -569,14 +569,14 @@ footer .copyright {
 #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
   margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
-    margin-bottom: 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
+    margin-bottom: 0;
   }
 }
 #discrography .album-container .album-1 .subtitle .subtitle-border, #discrography .album-container .album-2 .subtitle .subtitle-border {
@@ -587,14 +587,14 @@ footer .copyright {
   display: flex;
   padding: 5px;
 }
-@media (max-width: 767px) {
-  #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
+    font-size: 0.8rem;
   }
 }
 #discrography .album-container .album-1 .album-details p, #discrography .album-container .album-2 .album-details p {
@@ -622,12 +622,12 @@ footer .copyright {
   margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   #top {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 767px) {
   #top {
     display: none;
   }
@@ -644,21 +644,17 @@ footer .copyright {
   border-collapse: collapse;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
-#top .table-container table td {
+#top .table-container table td, #top .table-container table th {
   font-size: 1rem;
   color: #000;
   border: 2px solid #eee;
   padding: 15px;
 }
-#top .table-container table td img {
+#top .table-container table td img, #top .table-container table th img {
   width: 28px;
   height: 28px;
 }
 #top .table-container table th {
-  font-size: 1rem;
-  color: #000;
-  border: 2px solid #eee;
-  padding: 15px;
   background-color: #1c1c1c;
   color: white;
   text-transform: uppercase;
@@ -675,7 +671,15 @@ footer .copyright {
   margin: 0 auto;
   max-width: 1024px;
   gap: 15px;
-  padding: 30px 15px;
+  padding: 30px 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #galery .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 140px;
+    max-width: 768px;
+    padding: 25px 0;
+  }
 }
 @media (max-width: 767px) {
   #galery .gallery-container {
@@ -683,15 +687,7 @@ footer .copyright {
     grid-auto-rows: 120px;
     max-width: 320px;
     gap: 10px;
-    padding: 20px 10px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #galery .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-auto-rows: 140px;
-    max-width: 768px;
-    padding: 25px 15px;
+    padding: 20px 0;
   }
 }
 #galery .gallery-container .item {
@@ -743,16 +739,16 @@ footer .copyright {
   align-items: flex-start;
   margin: 30px 0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #interview .video-container {
+    margin: 25px 0;
+  }
+}
 @media (max-width: 767px) {
   #interview .video-container {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #interview .video-container {
-    margin: 25px 0;
   }
 }
 #interview .video-container .card-container {
@@ -770,16 +766,16 @@ footer .copyright {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
 }
-@media (max-width: 767px) {
-  #interview .video-container .card-container iframe {
-    width: 300px;
-    height: 185px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #interview .video-container .card-container iframe {
     width: 360px;
     height: 235px;
+  }
+}
+@media (max-width: 767px) {
+  #interview .video-container .card-container iframe {
+    width: 300px;
+    height: 185px;
   }
 }
 #interview .video-container .card-container .card-video-content {
@@ -787,41 +783,41 @@ footer .copyright {
   border-top: 1px solid #5b5b5b;
   padding-top: 10px;
 }
-@media (max-width: 767px) {
-  #interview .video-container .card-container .card-video-content {
-    width: 300px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #interview .video-container .card-container .card-video-content {
     width: 360px;
+  }
+}
+@media (max-width: 767px) {
+  #interview .video-container .card-container .card-video-content {
+    width: 300px;
   }
 }
 #interview .video-container .card-container .card-video-content h5 {
   font-size: 1.1rem;
   font-weight: 600;
 }
-@media (max-width: 767px) {
-  #interview .video-container .card-container .card-video-content h5 {
-    font-size: 0.9rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #interview .video-container .card-container .card-video-content h5 {
     font-size: 1rem;
   }
 }
+@media (max-width: 767px) {
+  #interview .video-container .card-container .card-video-content h5 {
+    font-size: 0.9rem;
+  }
+}
 #interview .video-container .card-container .card-video-content p {
   font-size: 0.9rem;
-}
-@media (max-width: 767px) {
-  #interview .video-container .card-container .card-video-content p {
-    font-size: 0.7rem;
-  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #interview .video-container .card-container .card-video-content p {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 767px) {
+  #interview .video-container .card-container .card-video-content p {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
@@ -836,27 +832,27 @@ footer .copyright {
   align-items: center;
   padding: 30px 0;
 }
-@media (max-width: 767px) {
-  #aboutUs {
-    padding: 20px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #aboutUs {
     padding: 25px 0;
   }
 }
+@media (max-width: 767px) {
+  #aboutUs {
+    padding: 20px 0;
+  }
+}
 #aboutUs .about-us-banner {
   margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  #aboutUs .about-us-banner {
-    margin-bottom: 10px;
-  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #aboutUs .about-us-banner {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #aboutUs .about-us-banner {
+    margin-bottom: 10px;
   }
 }
 #aboutUs .about-us-banner img {
@@ -866,47 +862,47 @@ footer .copyright {
   border-radius: 5px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 767px) {
-  #aboutUs .about-us-banner img {
-    width: 300px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #aboutUs .about-us-banner img {
     width: 700px;
   }
 }
+@media (max-width: 767px) {
+  #aboutUs .about-us-banner img {
+    width: 300px;
+  }
+}
 #aboutUs .about-us-description {
-  width: 800px;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
-@media (max-width: 767px) {
-  #aboutUs .about-us-description {
-    width: 85%;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #aboutUs .about-us-description {
     width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  #aboutUs .about-us-description {
+    width: 85%;
   }
 }
 #aboutUs .about-us-description p {
   font-size: 1.2rem;
   margin: 10px 0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs .about-us-description p {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 767px) {
   #aboutUs .about-us-description p {
     font-size: 0.7rem;
     margin: 5px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #aboutUs .about-us-description p {
-    font-size: 1rem;
   }
 }
 
@@ -916,14 +912,14 @@ footer .copyright {
   align-items: center;
   margin: 30px 0;
 }
-@media (max-width: 767px) {
-  #form {
-    margin: 20px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #form {
     margin: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  #form {
+    margin: 20px 0;
   }
 }
 #form .contact-container {
@@ -937,16 +933,16 @@ footer .copyright {
   border-radius: 5px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 767px) {
-  #form .contact-container {
-    width: 300px;
-    padding: 30px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #form .contact-container {
     width: 420px;
     padding: 45px;
+  }
+}
+@media (max-width: 767px) {
+  #form .contact-container {
+    width: 300px;
+    padding: 30px;
   }
 }
 #form .contact-container .contact-group {
@@ -955,14 +951,14 @@ footer .copyright {
 #form .contact-container .contact-group .subtitle {
   margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  #form .contact-container .contact-group .subtitle {
-    margin-bottom: 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #form .contact-container .contact-group .subtitle {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #form .contact-container .contact-group .subtitle {
+    margin-bottom: 0;
   }
 }
 #form .contact-container .contact-group .form-group {
@@ -973,14 +969,14 @@ footer .copyright {
   font-size: 1rem;
   margin-bottom: 10px;
 }
-@media (max-width: 767px) {
-  #form .contact-container .contact-group .form-group label {
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #form .contact-container .contact-group .form-group label {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  #form .contact-container .contact-group .form-group label {
+    font-size: 0.8rem;
   }
 }
 #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
@@ -988,14 +984,14 @@ footer .copyright {
   font-size: 1rem;
   padding: 5px 10px;
 }
-@media (max-width: 767px) {
-  #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
+    font-size: 0.8rem;
   }
 }
 #form .contact-container .button-form button {
@@ -1011,15 +1007,15 @@ footer .copyright {
   border: 2px solid #1c1c1c;
   transition: 0.2s;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container .button-form button {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 767px) {
   #form .contact-container .button-form button {
     font-size: 0.7rem;
     padding: 10px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #form .contact-container .button-form button {
-    font-size: 0.8rem;
   }
 }
 #form .contact-container .button-form button:hover {

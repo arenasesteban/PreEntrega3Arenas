@@ -27,13 +27,13 @@
             text-align: center;
             padding: 20px 0;
             background-color: black;
-            @include mobile {
-                font-size: .9rem;
-                padding: 10px 0;
-            }
             @include tablet {
                 font-size: 1.2rem;
                 padding: 15px 0;
+            }
+            @include mobile {
+                font-size: .9rem;
+                padding: 10px 0;
             }
 
             span {
@@ -47,12 +47,12 @@
     display: flex;
     justify-content: center;
     background-color: #1c1c1c;
-    padding: 30px 0;
-    @include mobile {
-        padding: 20px 0;
-    }
+    @include desktop-spacing(true);
     @include tablet {
-        padding: 25px 0;
+        @include tablet-spacing(true);
+    }
+    @include mobile {
+        @include mobile-spacing(true);
     }
 
     .biography-container {
@@ -61,12 +61,12 @@
         align-items: center;
         color: white;
         gap: 40px;
+        @include tablet {
+            gap: 30px;
+        }
         @include mobile {
             flex-direction: column-reverse;
             gap: 20px;
-        }
-        @include tablet {
-            gap: 30px;
         }
 
         .biography-description {
@@ -81,27 +81,27 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                @include tablet {
+                    font-size: 1.3rem;
+                    margin-bottom: 15px;
+                }
                 @include mobile {
                     font-size: 1rem;
                     text-align: center;
                     margin-bottom: 10px;
-                }
-                @include tablet {
-                    font-size: 1.3rem;
-                    margin-bottom: 15px;
                 }
             }
 
             p {
                 width: 500px;
                 font-size: 1.2rem;
-                @include mobile {
-                    width: 90%;
-                    font-size: .7rem;
-                }
                 @include tablet {
                     width: 400px;
                     font-size: 1rem;
+                }
+                @include mobile {
+                    width: 90%;
+                    font-size: .7rem;
                 }
             }
         }
@@ -114,11 +114,11 @@
                 width: 400px;
                 border-radius: 5px;
                 box-shadow: 0 0 16px rgba(0, 0, 0, .6);
-                @include mobile {
-                    width: 180px;
-                }
                 @include tablet {
                     width: 280px;
+                }
+                @include mobile {
+                    width: 180px;
                 }
             }
         }
@@ -133,14 +133,14 @@
     
     .carousel {
         width: 940px;
-        margin: 30px 0;
-        @include mobile {
-            width: 320px;
-            margin: 20px 0;
-        }
+        @include desktop-spacing(false);
         @include tablet {
             width: 650px;
-            margin: 25px 0;
+            @include tablet-spacing(false);
+        }
+        @include mobile {
+            width: 320px;
+            @include mobile-spacing(false);
         }
 
         .carousel-inner {
@@ -152,11 +152,11 @@
                     height: 520px;
                     object-fit: cover;
                     object-position: center;
-                    @include mobile {
-                        height: 180px;
-                    }
                     @include tablet {
                         height: 360px;
+                    }
+                    @include mobile {
+                        height: 180px;
                     }
                 }
             }
@@ -177,11 +177,11 @@
                     font-size: 1.8rem;
                     font-weight: 700;
                     text-transform: uppercase;
-                    @include mobile {
-                        font-size: .9rem;
-                    }
                     @include tablet {
                         font-size: 1.4rem;
+                    }
+                    @include mobile {
+                        font-size: .9rem;
                     }
                 }
             }

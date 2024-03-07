@@ -1,0 +1,24 @@
+// Aplica espaciado mediante padding o margin según la preferencia especificada
+@mixin spacing-common($top-bottom, $left-right, $use-padding) {
+    @if $use-padding { // Aplica padding si el paramatro es true
+        padding: $top-bottom $left-right;
+    }
+    @else { // Aplica marign si el paramatro es false
+        margin: $top-bottom $left-right;
+    }
+}
+
+// Mixin para valores de padding o margin comunes - Desktop
+@mixin desktop-spacing($use-padding) {
+    @include spacing-common(30px, 0, $use-padding);
+}
+
+// Mixin para valores de padding o margin comunes - Tablet
+@mixin tablet-spacing($use-padding) {
+    @include spacing-common(25px, 0, $use-padding);
+}
+
+// Mixin para valores de padding o margin comunes - Mobible
+@mixin mobile-spacing($use-padding) {
+    @include spacing-common(20px, 0, $use-padding);
+}
