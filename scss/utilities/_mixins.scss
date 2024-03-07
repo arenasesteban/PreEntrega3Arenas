@@ -18,7 +18,7 @@
     @include spacing-common(25px, 0, $use-padding);
 }
 
-// Mixin para valores de padding o margin comunes - Mobible
+// Mixin para valores de padding o margin comunes - Mobile
 @mixin mobile-spacing($use-padding) {
     @include spacing-common(20px, 0, $use-padding);
 }

@@ -25,14 +25,14 @@ a {
   padding: 30px 0;
   background-color: #000;
 }
-@media (max-width: 767px) {
-  .title-container {
-    padding: 20px 15px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-container {
     padding: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  .title-container {
+    padding: 20px 15px;
   }
 }
 .title-container h1 {
@@ -40,14 +40,14 @@ a {
   font-weight: 700;
   color: white;
 }
-@media (max-width: 767px) {
-  .title-container h1 {
-    font-size: 2rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-container h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .title-container h1 {
+    font-size: 2rem;
   }
 }
 .title-container h2 {
@@ -57,14 +57,14 @@ a {
   text-transform: uppercase;
   color: white;
 }
-@media (max-width: 767px) {
-  .title-container h2 {
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-container h2 {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .title-container h2 {
+    font-size: 0.8rem;
   }
 }
 .title-container p {
@@ -72,14 +72,14 @@ a {
   font-weight: 600;
   color: white;
 }
-@media (max-width: 767px) {
-  .title-container p {
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-container p {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .title-container p {
+    font-size: 0.8rem;
   }
 }
 
@@ -91,28 +91,28 @@ a {
   padding: 20px 0;
   background-color: #2f2f2f;
 }
-@media (max-width: 767px) {
-  .title-2-container {
-    padding: 10px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-2-container {
     padding: 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  .title-2-container {
+    padding: 10px 0;
   }
 }
 .title-2-container h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
-@media (max-width: 767px) {
-  .title-2-container h2 {
-    font-size: 1.1rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-2-container h2 {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .title-2-container h2 {
+    font-size: 1.1rem;
   }
 }
 
@@ -126,14 +126,14 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
 }
-@media (max-width: 767px) {
-  .subtitle h2 {
-    font-size: 1.1rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .subtitle h2 {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .subtitle h2 {
+    font-size: 1.1rem;
   }
 }
 .subtitle .subtitle-border {
@@ -141,14 +141,14 @@ a {
   border-top: 2px solid black;
   margin-top: 2px;
 }
-@media (max-width: 767px) {
-  .subtitle .subtitle-border {
-    width: 40px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .subtitle .subtitle-border {
     width: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .subtitle .subtitle-border {
+    width: 40px;
   }
 }
 
@@ -159,14 +159,14 @@ header .navbar {
   padding: 5px;
   background-color: white !important;
 }
-@media (max-width: 767px) {
-  header .navbar {
-    padding: 10px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   header .navbar {
     padding: 7px 0;
+  }
+}
+@media (max-width: 767px) {
+  header .navbar {
+    padding: 10px 0;
   }
 }
 header .navbar .navbar-brand {
@@ -177,29 +177,29 @@ header .navbar .navbar-brand {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 767px) {
-  header .navbar .navbar-brand {
-    font-size: 1.4rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   header .navbar .navbar-brand {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-brand {
+    font-size: 1.4rem;
   }
 }
 header .navbar .navbar-brand img {
   height: 60px;
   margin-right: 10px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .navbar .navbar-brand img {
+    height: 55px;
+  }
+}
 @media (max-width: 767px) {
   header .navbar .navbar-brand img {
     height: 50px;
     margin-right: 2px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  header .navbar .navbar-brand img {
-    height: 55px;
   }
 }
 header .navbar .navbar-nav a {
@@ -212,16 +212,16 @@ header .navbar .navbar-nav a {
   text-transform: uppercase;
   padding: 0 10px;
 }
-@media (max-width: 767px) {
-  header .navbar .navbar-nav a {
-    height: 40px;
-    font-size: 0.8rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   header .navbar .navbar-nav a {
     height: 45px;
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-nav a {
+    height: 40px;
+    font-size: 0.8rem;
   }
 }
 header .navbar .navbar-nav li {
@@ -242,14 +242,14 @@ footer {
   align-items: center;
   background-color: #cfcfcf;
 }
-@media (max-width: 767px) {
-  footer {
-    height: 100px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   footer {
     height: 110px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    height: 100px;
   }
 }
 footer .description-container {
@@ -262,14 +262,14 @@ footer .description-container .description-home {
   font-weight: 700;
   font-size: 1.5rem;
 }
-@media (max-width: 767px) {
-  footer .description-container .description-home {
-    font-size: 1.2rem;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   footer .description-container .description-home {
     font-size: 1.35rem;
+  }
+}
+@media (max-width: 767px) {
+  footer .description-container .description-home {
+    font-size: 1.2rem;
   }
 }
 footer .description-container .description-socialmedia img {
@@ -277,16 +277,16 @@ footer .description-container .description-socialmedia img {
   height: 25px;
   margin: 0 5px;
 }
-@media (max-width: 767px) {
-  footer .description-container .description-socialmedia img {
-    width: 20px;
-    height: 20px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   footer .description-container .description-socialmedia img {
     width: 23px;
     height: 23px;
+  }
+}
+@media (max-width: 767px) {
+  footer .description-container .description-socialmedia img {
+    width: 20px;
+    height: 20px;
   }
 }
 footer .copyright {
@@ -295,15 +295,15 @@ footer .copyright {
   background-color: #c0c0c0;
   padding: 10px 0;
 }
-@media (max-width: 767px) {
-  footer .copyright {
-    font-size: 0.7rem;
-    padding: 6px 0;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   footer .copyright {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  footer .copyright {
+    font-size: 0.75rem;
+    padding: 6px 0;
   }
 }
 
@@ -427,7 +427,7 @@ footer .copyright {
 @media (max-width: 767px) {
   #biography .biography-container .biography-description p {
     width: 90%;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 #biography .biography-container .biography-image {
@@ -521,7 +521,7 @@ footer .copyright {
   }
 }
 
-#discrography {
+#discography {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -531,7 +531,7 @@ footer .copyright {
   background-size: cover;
   background-position: center;
 }
-#discrography .album-container {
+#discography .album-container {
   width: 920px;
   display: flex;
   justify-content: center;
@@ -543,82 +543,82 @@ footer .copyright {
   border-radius: 5px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #discrography .album-container {
+  #discography .album-container {
     width: 740px;
     padding: 15px;
     margin: 25px 0;
   }
 }
 @media (max-width: 767px) {
-  #discrography .album-container {
+  #discography .album-container {
     width: 95%;
     flex-direction: column;
     padding: 10px;
     margin: 20px 0;
   }
 }
-#discrography .album-container .album-1, #discrography .album-container .album-2 {
+#discography .album-container .album-1, #discography .album-container .album-2 {
   width: 50%;
 }
 @media (max-width: 767px) {
-  #discrography .album-container .album-1, #discrography .album-container .album-2 {
+  #discography .album-container .album-1, #discography .album-container .album-2 {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-#discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
+#discography .album-container .album-1 .subtitle, #discography .album-container .album-2 .subtitle {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
+  #discography .album-container .album-1 .subtitle, #discography .album-container .album-2 .subtitle {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
-  #discrography .album-container .album-1 .subtitle, #discrography .album-container .album-2 .subtitle {
+  #discography .album-container .album-1 .subtitle, #discography .album-container .album-2 .subtitle {
     margin-bottom: 0;
   }
 }
-#discrography .album-container .album-1 .subtitle .subtitle-border, #discrography .album-container .album-2 .subtitle .subtitle-border {
+#discography .album-container .album-1 .subtitle .subtitle-border, #discography .album-container .album-2 .subtitle .subtitle-border {
   border-color: white;
 }
-#discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
+#discography .album-container .album-1 .album-details, #discography .album-container .album-2 .album-details {
   font-size: 1rem;
   display: flex;
   padding: 5px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
+  #discography .album-container .album-1 .album-details, #discography .album-container .album-2 .album-details {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 767px) {
-  #discrography .album-container .album-1 .album-details, #discrography .album-container .album-2 .album-details {
+  #discography .album-container .album-1 .album-details, #discography .album-container .album-2 .album-details {
     font-size: 0.8rem;
   }
 }
-#discrography .album-container .album-1 .album-details p, #discrography .album-container .album-2 .album-details p {
+#discography .album-container .album-1 .album-details p, #discography .album-container .album-2 .album-details p {
   width: 50%;
   margin: 5px;
 }
-#discrography .album-container .album-1 .album-details p:first-of-type, #discrography .album-container .album-2 .album-details p:first-of-type {
+#discography .album-container .album-1 .album-details p:first-of-type, #discography .album-container .album-2 .album-details p:first-of-type {
   font-weight: 600;
   border-right: 1px solid grey;
 }
-#discrography .album-container .album-link {
+#discography .album-container .album-link {
   width: 50%;
 }
 @media (max-width: 767px) {
-  #discrography .album-container .album-link {
+  #discography .album-container .album-link {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  #discrography .album-container .album-link iframe {
+  #discography .album-container .album-link iframe {
     height: 152px;
   }
 }
-#discrography .album-container:first-of-type {
+#discography .album-container:first-of-type {
   margin-bottom: 0;
 }
 
@@ -817,7 +817,7 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #interview .video-container .card-container .card-video-content p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 767px) {
@@ -901,7 +901,7 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #aboutUs .about-us-description p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     margin: 5px 0;
   }
 }
@@ -1014,7 +1014,7 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #form .contact-container .button-form button {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     padding: 10px;
   }
 }
