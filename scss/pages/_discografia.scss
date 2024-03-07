@@ -16,7 +16,7 @@
         padding: 20px;
         @include desktop-spacing(false);
         background-color: rgba(0, 0, 0, .8);
-        box-shadow: 0 0 16px rgba(0, 0, 0, .6);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
         border-radius: 5px;
         @include tablet {
             width: 740px;

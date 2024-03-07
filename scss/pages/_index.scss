@@ -113,7 +113,7 @@
             img {
                 width: 400px;
                 border-radius: 5px;
-                box-shadow: 0 0 16px rgba(0, 0, 0, .6);
+               box-shadow: 0 0 10px rgba(0, 0, 0, .4);
                 @include tablet {
                     width: 280px;
                 }
@@ -145,7 +145,7 @@
 
         .carousel-inner {
             border-radius: 8px;
-            box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 
             .carousel-item {
                 img {

@@ -437,7 +437,7 @@ footer .copyright {
 #biography .biography-container .biography-image img {
   width: 400px;
   border-radius: 5px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #biography .biography-container .biography-image img {
@@ -474,7 +474,7 @@ footer .copyright {
 }
 #news .carousel .carousel-inner {
   border-radius: 8px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 #news .carousel .carousel-inner .carousel-item img {
   height: 520px;
@@ -539,7 +539,7 @@ footer .copyright {
   padding: 20px;
   margin: 30px 0;
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -811,7 +811,7 @@ footer .copyright {
   width: 480px;
   height: 270px;
   border-radius: 5px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -908,7 +908,7 @@ footer .copyright {
   object-position: bottom;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #aboutUs .about-us-banner img {
@@ -979,7 +979,7 @@ footer .copyright {
   padding: 60px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #form .contact-container {
