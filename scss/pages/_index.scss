@@ -72,6 +72,9 @@
         .biography-description {
             display: flex;
             flex-direction: column;
+            @include mobile {
+                align-items: center;
+            }
 
             h2 {
                 font-size: 1.6rem;
@@ -79,12 +82,12 @@
                 text-transform: uppercase;
                 margin-bottom: 20px;
                 @include mobile {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     text-align: center;
                     margin-bottom: 10px;
                 }
                 @include tablet {
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     margin-bottom: 15px;
                 }
             }
@@ -93,9 +96,8 @@
                 width: 500px;
                 font-size: 1.2rem;
                 @include mobile {
-                    width: unset;
+                    width: 90%;
                     font-size: .7rem;
-                    padding: 0 20px;
                 }
                 @include tablet {
                     width: 400px;
@@ -130,14 +132,14 @@
     flex-direction: column;
     
     .carousel {
-        width: 950px;
+        width: 940px;
         margin: 30px 0;
         @include mobile {
-            width: 90%;
+            width: 320px;
             margin: 20px 0;
         }
         @include tablet {
-            width: 700px;
+            width: 650px;
             margin: 25px 0;
         }
 
@@ -151,10 +153,10 @@
                     object-fit: cover;
                     object-position: center;
                     @include mobile {
-                        height: 220px;
+                        height: 180px;
                     }
                     @include tablet {
-                        height: 400px;
+                        height: 360px;
                     }
                 }
             }

@@ -390,6 +390,11 @@ footer .copyright {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  #biography .biography-container .biography-description {
+    align-items: center;
+  }
+}
 #biography .biography-container .biography-description h2 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -398,14 +403,14 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #biography .biography-container .biography-description h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #biography .biography-container .biography-description h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
   }
 }
@@ -415,9 +420,8 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #biography .biography-container .biography-description p {
-    width: unset;
+    width: 90%;
     font-size: 0.7rem;
-    padding: 0 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -453,18 +457,18 @@ footer .copyright {
   flex-direction: column;
 }
 #news .carousel {
-  width: 950px;
+  width: 940px;
   margin: 30px 0;
 }
 @media (max-width: 767px) {
   #news .carousel {
-    width: 90%;
+    width: 320px;
     margin: 20px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #news .carousel {
-    width: 700px;
+    width: 650px;
     margin: 25px 0;
   }
 }
@@ -479,12 +483,12 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #news .carousel .carousel-inner .carousel-item img {
-    height: 220px;
+    height: 180px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #news .carousel .carousel-inner .carousel-item img {
-    height: 400px;
+    height: 360px;
   }
 }
 #news .carousel .carousel-inner .carousel-caption {
@@ -769,13 +773,13 @@ footer .copyright {
 @media (max-width: 767px) {
   #interview .video-container .card-container iframe {
     width: 300px;
-    height: 200px;
+    height: 185px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #interview .video-container .card-container iframe {
     width: 360px;
-    height: 200px;
+    height: 235px;
   }
 }
 #interview .video-container .card-container .card-video-content {
@@ -834,8 +838,12 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #aboutUs {
-    flex-direction: column;
     padding: 20px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs {
+    padding: 25px 0;
   }
 }
 #aboutUs .about-us-banner {
@@ -844,6 +852,11 @@ footer .copyright {
 @media (max-width: 767px) {
   #aboutUs .about-us-banner {
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs .about-us-banner {
+    margin-bottom: 15px;
   }
 }
 #aboutUs .about-us-banner img {
@@ -858,6 +871,11 @@ footer .copyright {
     width: 300px;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs .about-us-banner img {
+    width: 700px;
+  }
+}
 #aboutUs .about-us-description {
   width: 800px;
   display: flex;
@@ -868,8 +886,12 @@ footer .copyright {
 }
 @media (max-width: 767px) {
   #aboutUs .about-us-description {
-    width: unset;
-    padding: 0 20px;
+    width: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs .about-us-description {
+    width: 90%;
   }
 }
 #aboutUs .about-us-description p {
@@ -882,6 +904,11 @@ footer .copyright {
     margin: 5px 0;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutUs .about-us-description p {
+    font-size: 1rem;
+  }
+}
 
 #form {
   display: flex;
@@ -892,6 +919,11 @@ footer .copyright {
 @media (max-width: 767px) {
   #form {
     margin: 20px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form {
+    margin: 25px 0;
   }
 }
 #form .contact-container {
@@ -908,7 +940,13 @@ footer .copyright {
 @media (max-width: 767px) {
   #form .contact-container {
     width: 300px;
-    padding: 25px;
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container {
+    width: 420px;
+    padding: 45px;
   }
 }
 #form .contact-container .contact-group {
@@ -920,6 +958,11 @@ footer .copyright {
 @media (max-width: 767px) {
   #form .contact-container .contact-group .subtitle {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container .contact-group .subtitle {
+    margin-bottom: 10px;
   }
 }
 #form .contact-container .contact-group .form-group {
@@ -935,6 +978,11 @@ footer .copyright {
     font-size: 0.8rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container .contact-group .form-group label {
+    font-size: 0.9rem;
+  }
+}
 #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
   width: 100%;
   font-size: 1rem;
@@ -943,6 +991,11 @@ footer .copyright {
 @media (max-width: 767px) {
   #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container .contact-group .form-group input, #form .contact-container .contact-group .form-group textarea {
+    font-size: 0.9rem;
   }
 }
 #form .contact-container .button-form button {
@@ -962,6 +1015,11 @@ footer .copyright {
   #form .contact-container .button-form button {
     font-size: 0.7rem;
     padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #form .contact-container .button-form button {
+    font-size: 0.8rem;
   }
 }
 #form .contact-container .button-form button:hover {
