@@ -94,42 +94,86 @@
 }
 
 #top {
-    @include tablet {
-        display: none;
-    }
-    @include mobile {
-        display: none;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .table-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        padding: 15px;
         @include desktop-spacing(false);
+        @include tablet {
+            @include tablet-spacing(false);
+        }
+        @include mobile {
+            width: 95%;
+            overflow-x: auto;
+            @include mobile-spacing(false);
+        }
     
         table {
-            background-color: white;
-            text-align: center;
             border-collapse: collapse;
-            box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+            background-color: white;
 
-            td {
-                font-size: 1rem;
-                color: #000;
-                border: 2px solid #eee;
-                padding: 15px;
-
-                img {
-                    width: 28px;
-                    height: 28px;
+            thead {
+                th {
+                    border-top: 2px solid #eee;
+                    border-bottom: 2px solid #eee;
+                    padding: 10px 20px;
+                    @include tablet {
+                        font-size: .95rem;
+                    }
+                    @include mobile {
+                        font-size: .8rem;
+                    }
                 }
             }
             
-            th {
-                @extend td;
-                background-color: #1c1c1c;
-                color: white;
-                text-transform: uppercase;
+            tbody {
+                tr {
+                    td {
+                        border-bottom: 1px solid #eee;
+                        padding: 10px 20px;
+                        white-space: nowrap;
+                        @include tablet {
+                            font-size: .95rem;
+                        }
+                        @include mobile {
+                            font-size: .8rem;
+                        }
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            @include tablet {
+                                width: 23px;
+                                height: 23px;
+                            }
+                            @include mobile {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    
+                        &:last-of-type {
+                            text-align: center;
+                        }
+                    }
+
+                    &:last-of-type {
+                        td {
+                            border-bottom: unset;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #eee;
+                        transition: 0.1s;
+                    }
+                }
             }
         }
     }

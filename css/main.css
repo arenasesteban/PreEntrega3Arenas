@@ -622,42 +622,90 @@ footer .copyright {
   margin-bottom: 0;
 }
 
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#top .table-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 30px 0;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
-  #top {
-    display: none;
+  #top .table-container {
+    margin: 25px 0;
   }
 }
 @media (max-width: 767px) {
-  #top {
-    display: none;
+  #top .table-container {
+    width: 95%;
+    overflow-x: auto;
+    margin: 20px 0;
   }
 }
-#top .table-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
-}
 #top .table-container table {
-  background-color: white;
-  text-align: center;
   border-collapse: collapse;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  background-color: white;
 }
-#top .table-container table td, #top .table-container table th {
-  font-size: 1rem;
-  color: #000;
-  border: 2px solid #eee;
-  padding: 15px;
+#top .table-container table thead th {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  padding: 10px 20px;
 }
-#top .table-container table td img, #top .table-container table th img {
-  width: 28px;
-  height: 28px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  #top .table-container table thead th {
+    font-size: 0.95rem;
+  }
 }
-#top .table-container table th {
-  background-color: #1c1c1c;
-  color: white;
-  text-transform: uppercase;
+@media (max-width: 767px) {
+  #top .table-container table thead th {
+    font-size: 0.8rem;
+  }
+}
+#top .table-container table tbody tr td {
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #top .table-container table tbody tr td {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 767px) {
+  #top .table-container table tbody tr td {
+    font-size: 0.8rem;
+  }
+}
+#top .table-container table tbody tr td img {
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #top .table-container table tbody tr td img {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 767px) {
+  #top .table-container table tbody tr td img {
+    width: 20px;
+    height: 20px;
+  }
+}
+#top .table-container table tbody tr td:last-of-type {
+  text-align: center;
+}
+#top .table-container table tbody tr:last-of-type td {
+  border-bottom: unset;
+}
+#top .table-container table tbody tr:hover {
+  background-color: #eee;
+  transition: 0.1s;
 }
 
 #galery {
