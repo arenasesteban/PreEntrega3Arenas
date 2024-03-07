@@ -8,6 +8,9 @@
     @include mobile {
         padding: 20px 15px;
     }
+    @include tablet {
+        padding: 25px 0;
+    }
 
     h1 {
         font-size: 4rem;
@@ -15,6 +18,9 @@
         color: white;
         @include mobile {
             font-size: 2rem;
+        }
+        @include tablet {
+            font-size: 3rem;
         }
     }
 
@@ -27,6 +33,9 @@
         @include mobile {
             font-size: .8rem;
         }
+        @include tablet {
+            font-size: 1.1rem;
+        }
     }
 
     p {
@@ -35,6 +44,9 @@
         color: white;
         @include mobile {
             font-size: .8rem;
+        }
+        @include tablet {
+            font-size: 1.1rem;
         }
     }
 }
@@ -49,12 +61,18 @@
     @include mobile {
         padding: 10px 0;
     }
+    @include tablet {
+        padding: 15px 0;
+    }
 
     h2 {
         font-size: 2.5rem;
         font-weight: 700;
         @include mobile {
             font-size: 1.1rem;
+        }
+        @include tablet {
+            font-size: 1.8rem;
         }
     }
 }
@@ -71,6 +89,9 @@
         @include mobile {
             font-size: 1.1rem;
         }
+        @include tablet {
+            font-size: 1.4rem;
+        }
     }
 
     .subtitle-border {
@@ -79,6 +100,9 @@
         margin-top: 2px;
         @include mobile {
             width: 40px;
+        }
+        @include tablet {
+            width: 50px;
         }
     }
 }

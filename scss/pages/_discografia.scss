@@ -24,6 +24,11 @@
             padding: 10px;
             margin: 20px 0;
         }
+        @include tablet {
+            width: 740px;
+            padding: 15px;
+            margin: 25px 0;
+        }
 
         .album-1, .album-2 {
             width: 50%;
@@ -36,6 +41,9 @@
                 margin-bottom: 20px;
                 @include mobile {
                     margin-bottom: 0;
+                }
+                @include tablet {
+                    margin-bottom: 10px;
                 }
 
                 .subtitle-border {
@@ -50,12 +58,15 @@
                 @include mobile {
                     font-size: .8rem;
                 }
+                @include tablet {
+                    font-size: .9rem;
+                }
 
                 p {
                     width: 50%;
                     margin: 5px;
 
-                    &:first-child {
+                    &:first-of-type {
                         font-weight: 600;
                         border-right: 1px solid grey;
                     }
@@ -84,6 +95,9 @@
 
 #top {
     @include mobile {
+        display: none;
+    }
+    @include tablet {
         display: none;
     }
 
