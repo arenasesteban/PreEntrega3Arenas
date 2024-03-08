@@ -3,7 +3,7 @@ header {
 
     .navbar {
         padding: 5px;
-        background-color: white !important;
+        background-color: $primary-color !important;
         @include tablet {
             padding: 7px 0;
         } 
@@ -64,7 +64,7 @@ header {
                 border-radius: 5px;
 
                 &:hover {
-                    background-color: #eee;
+                    background-color: $primary-border;
                     transition: 0.5s;   
                 }
             }

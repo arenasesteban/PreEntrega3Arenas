@@ -1,5 +1,5 @@
 #galery {
-    background-color: #1c1c1c;
+    background-color: $secondary-background;
 
     .gallery-container {
         display: grid;
@@ -116,8 +116,9 @@
             }
 
             .card-video-content {
+                color: $secondary-color;
                 width: 480px;
-                border-top: 1px solid #5b5b5b;
+                border-top: 1px solid #b1b1b1;
                 padding-top: 10px;
                 @include tablet {
                     width: 360px;

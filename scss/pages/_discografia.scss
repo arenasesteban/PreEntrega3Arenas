@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $primary-color;
     background-image: url(../images/banner_2.jpg);
     background-size: cover;
     background-position: center;
@@ -38,6 +38,7 @@
             }
 
             .subtitle {
+                color: $primary-color;
                 margin-bottom: 20px;
                 @include tablet {
                     margin-bottom: 10px;
@@ -47,7 +48,7 @@
                 }
 
                 .subtitle-border {
-                    border-color: white;
+                    border-color: $primary-color;
                 }
             }
 
@@ -68,7 +69,7 @@
 
                     &:first-of-type {
                         font-weight: 600;
-                        border-right: 1px solid grey;
+                        border-right: 1px solid $primary-border;
                     }
                 }
             }
@@ -115,13 +116,14 @@
         }
     
         table {
+            color: $secondary-color;
             border-collapse: collapse;
-            background-color: white;
+            background-color: $primary-color;
 
             thead {
                 th {
-                    border-top: 2px solid #eee;
-                    border-bottom: 2px solid #eee;
+                    border-top: 2px solid $primary-border;
+                    border-bottom: 2px solid $primary-border;
                     padding: 10px 20px;
                     @include tablet {
                         font-size: .95rem;
@@ -135,7 +137,7 @@
             tbody {
                 tr {
                     td {
-                        border-bottom: 1px solid #eee;
+                        border-bottom: 1px solid $primary-border;
                         padding: 10px 20px;
                         white-space: nowrap;
                         @include tablet {
@@ -170,7 +172,7 @@
                     }
 
                     &:hover {
-                        background-color: #eee;
+                        background-color: $primary-border;
                         transition: 0.1s;
                     }
                 }
