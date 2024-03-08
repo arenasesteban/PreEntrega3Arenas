@@ -118,7 +118,7 @@
             .card-video-content {
                 color: $secondary-color;
                 width: 480px;
-                border-top: 1px solid #b1b1b1;
+                border-top: 1px solid $secondary-border;
                 padding-top: 10px;
                 @include tablet {
                     width: 360px;
