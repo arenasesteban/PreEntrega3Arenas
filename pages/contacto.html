@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
         <!-- Boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- CSS -->
         <link rel="stylesheet" href="../css/main.css">
         <title>Paulo Londra | Contacto</title>
@@ -54,13 +56,13 @@
         <main>
             <div class="title-container">
                 <div class="title-group">
-                    <h1>Contáctanos!</h1>
-                    <p>¿Quieres ser parte de nuestra comunidad o darnos tu opinión?</p>
+                    <h1 data-aos="fade-up">Contáctanos!</h1>
+                    <p data-aos="fade-up">¿Quieres ser parte de nuestra comunidad o darnos tu opinión?</p>
                 </div>
             </div>
             <!-- Formulario -->
             <section id="form">
-                <div class="contact-container">
+                <div class="contact-container" data-aos="fade-up">
                     <div class="contact-group">
                         <div class="subtitle">
                             <h2>Envíanos un mensaje</h2>
@@ -125,5 +127,10 @@
         </footer>
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
         <!-- Boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- CSS -->
         <link rel="stylesheet" href="../css/main.css">
         <title>Paulo Londra | Galería</title>
@@ -53,11 +55,11 @@
         <!-- MAIN -->
         <main>
             <div class="title-container">
-                    <h1>Galería</h1>
+                    <h1 data-aos="fade-up">Galería</h1>
             </div>
             <!-- Galeria -->
             <section id="galery">
-                <div class="gallery-container">
+                <div class="gallery-container" data-aos="fade-up">
                     <div class="item_vertical">
                         <img src="../images/galeria_6.jpg" alt="">
                     </div>
@@ -94,17 +96,17 @@
             <!-- Entevistas -->
             <section id="interview">
                 <div class="title-2-container">
-                    <h2>Entrevistas</h2>
+                    <h2 data-aos="fade-up">Entrevistas</h2>
                 </div>
                 <div class="video-container">
-                    <div class="card-container">
+                    <div class="card-container" data-aos="fade-up">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/dbk2Z8C2eyU?si=stXgAI72W7SbNIrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-video-content">
                             <h5>Entrevista a Paulo Londra: Su carrera, su pausa, su familia, sus problemas y su disco nuevo</h5>
                             <p>24 de noviembre de 2022</p>
                         </div>
                     </div>
-                    <div class="card-container">
+                    <div class="card-container" data-aos="fade-up">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/sMTnXx4thW8?si=u9v2QtoODankvVfL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-video-content">
                             <h5>Paulo Londra en la Alfombra Roja | Latin GRAMMY® 2019</h5>
@@ -143,5 +145,10 @@
         </footer>
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

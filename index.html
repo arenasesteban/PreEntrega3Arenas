@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- CSS -->
         <link rel="stylesheet" href="./css/main.css">
         <title>Paulo Londra | Home</title>
@@ -59,15 +61,14 @@
                         <img src="./images/banner_3.jpg" alt="Banner">
                     </div>
                     <div class="banner-content">
-                        <p>Yo soy famoso gracias a mamá y papá, <span>me trataron siempre como una estrella</span></p>   
+                        <p data-aos="fade-up">Yo soy famoso gracias a mamá y papá, <span>me trataron siempre como una estrella</span></p>   
                     </div>  
                 </div>
             </section>
             <!-- Biografia -->
             <section id="biography">
-                <div class="biography-container">
-                    <div class="biography-description
-                    ">
+                <div class="biography-container" data-aos="fade-up">
+                    <div class="biography-description">
                         <h2>Paulo Ezequiel Londra Farías</h2>
                         <p>Destacado cantante, rapero y compositor argentino nacido el 12 de abril de 1998 en Córdoba, inicio su carrera en 2017 cuando lanzó su primer sencillo "Relax", que lo catapultó al éxito en el genero del Trap.
                         Reconocido por su estilo que evita de temas violentos o relacionados con las drogas en sus canciones.
@@ -81,9 +82,9 @@
             <!-- Noticias -->
             <section id="news">
                 <div class="title-2-container">
-                    <h2>Noticias destacadas</h2>
+                    <h2 data-aos="fade-up">Noticias destacadas</h2>
                 </div>
-                <div id="carouselWithCaptions" class="carousel slide">
+                <div id="carouselWithCaptions" class="carousel slide" data-aos="fade-up">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
@@ -149,5 +150,10 @@
         </footer>
         <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
